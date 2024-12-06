@@ -43,7 +43,6 @@ function FeedBack() {
       console.error("Error saat mengirim testimoni:", error);
     }
   };
-  console.log(saran);
 
   return (
     <div
