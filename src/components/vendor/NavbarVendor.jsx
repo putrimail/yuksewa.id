@@ -22,7 +22,7 @@ function NavbarVendor() {
   const logout = async () => {
     try {
       await logoutVendor();
-      navigate("/login");
+      navigate("/");
     } catch (error) {
       console.error(error);
     }
