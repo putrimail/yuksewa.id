@@ -81,8 +81,7 @@ function ProductList() {
     setShowAll((prevState) => !prevState);
     setLength(showAll ? 8 : products.length);
   };
-  console.log("BASE_URL:", BASE_URL);
-  console.log("Token:", token);
+
   return (
     <div className="container mt-5 min-vh-100 ">
       <div className="row">
