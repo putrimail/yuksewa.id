@@ -82,7 +82,7 @@ function FeedBack() {
             {saran.slice(0, 5).map((saran, index) => (
               <div key={index}>
                 <hr />
-                <p>emmail : {saran.email}</p>
+                <p>email : {saran.email}</p>
                 <p style={{ marginTop: "-15px" }}>pesan : {saran.pesan}</p>
                 <hr />
               </div>
