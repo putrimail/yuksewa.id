@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.custom-input {
+  border: none;
+  border-bottom: 1px solid #9b9ba1; /* Set the desired color for the bottom border */
+  background-color: transparent; /* Make the background transparent */
+  outline: none; /* Remove the default outline */
+  box-shadow: none; /* Remove any default box shadow */
+}
+
+.custom-input:focus {
+  border-bottom: 2px solid #9b9ba1; /* Optional: Change the border thickness/color on focus */
+}
+.product-image {
+  width: 100%;
+  height: 220px; /* Atur tinggi gambar sesuai kebutuhan */
+  object-fit: cover;
+}
+
+/* ProductDetail.css */
+.modal-lg {
+  max-width: 800px;
+}
+
+.product-description {
+  white-space: pre-wrap; /* Membuat teks tetap rapi dan terformat sesuai dengan newline */
+  word-wrap: break-word; /* Memastikan kata yang panjang tidak melampaui batas */
+}
+/* Custom CSS for ProductList and ProductDetail */
+.card-text,
+.product-description {
+  white-space: normal; /* Membuat teks tetap rapi dan terformat sesuai dengan newline */
+  word-wrap: break-word; /* Memastikan kata yang panjang tidak melampaui batas */
+  overflow-wrap: break-word; /* Alternatif untuk memastikan kata panjang terbungkus dengan benar */
+  text-overflow: ellipsis; /* Menambahkan elipsis (...) jika teks terlalu panjang */
+}
+
+/* Definisikan animasi berkedip */
+
+@keyframes blink {
+  0% {
+    color: "#B0C4DE";
+  }
+  50% {
+    color: blueviolet;
+  }
+  100% {
+    color: "#B0C4DE";
+  }
+}
+
+@keyframes swipe {
+  0% {
+    margin-top: -20px;
+  }
+  50% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -20px;
+  }
+}
+/* Terapkan animasi pada elemen dengan kelas .blinking-text */
+.blinking-text {
+  animation: blink 1s infinite;
+}
+.swiper-text {
+  animation: swipe 1.5s infinite;
+}
