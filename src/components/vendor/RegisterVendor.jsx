@@ -79,33 +79,36 @@ export default function RegisterVendor() {
                   name="Nama Vendor"
                   type="text"
                   value={namaVendor}
+                  placeholder="ex : samuel"
                   onChange={(e) => setNamaVendor(e.target.value)}
                 />
                 <InputForm
                   name="Nama Toko"
                   type="text"
                   value={namaToko}
+                  placeholder="ex : samuel store"
                   onChange={(e) => setNamaToko(e.target.value)}
                 />
                 <InputForm
                   name="Alamat Toko"
                   type="text"
                   value={alamatToko}
+                  placeholder="ex : jalan batu 02, kel. Jambu, kec. Jeruk, kab. Semangka"
                   onChange={(e) => setAlamatToko(e.target.value)}
                 />
-                <p>
-                  <small>*harus mengisi kecamatan </small>
-                </p>
+
                 <InputForm
                   name="No WhatsApp"
                   type="tel"
                   value={noWa}
+                  placeholder="ex : 6280******"
                   onChange={(e) => setNoWa(e.target.value)}
                 />
                 <InputForm
                   name="Email"
                   type="email"
                   value={email}
+                  placeholder="ex : samuel@gmail.com"
                   onChange={(e) => setEmail(e.target.value)}
                 />
                 <label className="pt-1">Password</label>
@@ -115,6 +118,7 @@ export default function RegisterVendor() {
                     className="custom-input w-75"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
+                    placeholder="ex : Samuel12#"
                   />
                   <span
                     onClick={handleHidePassword}
@@ -150,7 +154,7 @@ export default function RegisterVendor() {
   );
 }
 
-function InputForm({ name, type, value, onChange }) {
+function InputForm({ name, type, value, onChange, placeholder }) {
   return (
     <>
       <label className="pt-1">{name}</label>
@@ -159,6 +163,7 @@ function InputForm({ name, type, value, onChange }) {
         className="custom-input w-100"
         value={value}
         onChange={onChange}
+        placeholder={placeholder}
       />
     </>
   );
