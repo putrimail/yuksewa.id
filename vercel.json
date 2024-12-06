@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "https://your-backend-url.com/api/$1"
+      "destination": "https://api-v1-yuksewa-production.up.railway.app"
     },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
